@@ -14,7 +14,8 @@ try:
 except ImportError:
     logger.warning(
         "You won't be able to use the Robotell can backend without "
-        "the serial module installed!"
+        "the serial module installed!\n"
+        "pip install pyserial"
     )
     serial = None
 
